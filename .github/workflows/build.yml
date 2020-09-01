@@ -17,5 +17,5 @@ jobs:
         #parameters: '{"username": "${{ secrets.USERNAME }}", "password": "${{ secrets.PASSWORD }}", "acceptUntrustedCerts": "true"}'
         cmd: |
           'version'
-          'start-build nodejs-ex-git --follow'
+          'start-build workbc-keycloak-nodejs-microservice-git --follow'
           'status'
