@@ -5,10 +5,10 @@ To do this, run:
 
 ```bash
 # create the nodejs example as usual
-oc new-app https://github.com/sclorg/nodejs-ex
+oc new-app https://github.com/MehmetVural/workbc-keycloak-nodejs-microservice
 
 # now create the pipeline build controller from the openshift/pipeline
 # subdirectory
-oc new-app https://github.com/sclorg/nodejs-ex \
+oc new-app https://github.com/MehmetVural/workbc-keycloak-nodejs-microservice \
   --context-dir=openshift/pipeline --name nodejs-ex-pipeline
 ```
