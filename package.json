@@ -1,16 +1,37 @@
 {
   "name": "workbc-keycloak-nodejs-microservice",
-  "version": "1.0.0",
-  "description": "WorkBc microservices for mobile apps",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mehmet Vural",
-  "license": "ISC",
+  "version": "0.0.1",
+  "description": "WorkBc NodeJS microservices for mobile apps",
+  "main": "server.js",
   "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "ejs": "^2.4.1",
     "express": "^4.17.1",
+    "mocha": "^2.4.5",
+    "mongodb": "^2.1.16",
+    "morgan": "^1.7.0",
+    "object-assign":"4.1.0",
     "express-session": "^1.17.1",
     "keycloak-connect": "^11.0.2"
-  }
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehmetVural/workbc-keycloak-nodejs-microservice.git"
+  },
+  "author": "Mehmet Vural <Mehmet.Vural@spotlightenterprise.com>",
+  "license": "CC-BY-1.0",
+  "bugs": {
+    "url": "https://github.com/MehmetVural/workbc-keycloak-nodejs-microservice/issues"
+  },
+  "homepage": "https://github.com/MehmetVural/workbc-keycloak-nodejs-microservice"
 }
+
